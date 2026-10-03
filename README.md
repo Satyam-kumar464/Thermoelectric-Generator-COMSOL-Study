@@ -1,123 +1,114 @@
-# Thermoelectric Generator Analysis Using COMSOL Multiphysics
+# Thermoelectric Generator – COMSOL Study
 
-## Overview
+A numerical study of a thermoelectric generator/module using COMSOL Multiphysics, focusing on thermal and electrical behavior and the effect of the H/L geometric ratio on thermoelectric performance.
 
-This project presents a numerical study of a thermoelectric generator using COMSOL Multiphysics.
-
-The objective is to investigate the coupled thermal and electrical behavior of the thermoelectric system and study the influence of the H/L parameter on temperature and power output.
-
-The model is being developed as a parametric multiphysics simulation, with the current work focused on obtaining and analyzing the thermal and power characteristics of the system.
+> **Project Status:** 🚧 In Progress
 
 ---
 
-## Project Status
+## Overview
 
- **Status: In Progress**
+This project investigates the performance of a thermoelectric module using a coupled thermal–electrical COMSOL Multiphysics model.
 
-The COMSOL model has been developed and the initial parametric study has been completed.
+The study focuses on the relationship between module geometry, temperature distribution, and electrical power output. A parametric study is performed by varying the H/L ratio, where H represents the thermoelectric leg height and L represents the characteristic leg length.
 
-### Completed so far
+The model is developed with reference to published research on Bi₂Te₂.₇₀Se₀.₃₀ thermoelectric modules and COMSOL-based simulation.
 
-- Thermoelectric geometry development
-- Material assignment
-- Thermal and electrical physics setup
-- Boundary condition definition
-- Mesh generation
-- Stationary study setup
-- Parametric study with varying H/L
-- Power calculation
-- Effective temperature analysis
-- Temperature response analysis
+---
 
-### Planned work
+## Objectives
 
-- Identify the exact optimum H/L ratio
-- Perform mesh/convergence verification
-- Analyze temperature distribution
-- Analyze electric potential distribution
-- Analyze current density
-- Analyze heat flux
-- Calculate thermoelectric performance parameters
-- Compare numerical results with the reference study
-- Finalize conclusions
+The main objectives of this project are:
+
+- Develop a 3D thermoelectric module model in COMSOL Multiphysics.
+- Analyze coupled thermal and electrical behavior.
+- Study temperature distribution within the thermoelectric module.
+- Investigate the electrical response of the module.
+- Perform a parametric study by varying the H/L ratio.
+- Analyze the effect of H/L on output power.
+- Identify the region corresponding to maximum power output.
+- Compare the numerical trends with published research.
+- Perform mesh and convergence verification.
 
 ---
 
 ## Software Used
 
 - COMSOL Multiphysics
-- Microsoft Excel / spreadsheet analysis for post-processing
-- GitHub for project documentation and version control
+- Heat Transfer in Solids
+- Electric Currents
+- Thermoelectric Effect
+- Stationary Study
 
 ---
 
 ## Model Description
 
-The thermoelectric system is modeled using coupled thermal and electrical physics in COMSOL Multiphysics.
+The thermoelectric module consists of:
 
-The study investigates the effect of the dimensionless geometric parameter:
+- **Bi₂Te₂.₇₀Se₀.₃₀** thermoelectric material
+- **Copper (Cu)** electrical conductors
+- **Al₂O₃** ceramic/insulating material
 
-\[
-H/L
-\]
+The model uses a coupled thermal and electrical formulation to evaluate the thermoelectric response of the module.
 
-on the thermal response and electrical power output of the thermoelectric system.
+### Physics Interfaces
 
----
+The following COMSOL physics interfaces are used:
 
-## Physics
+1. Heat Transfer in Solids
+2. Electric Currents
+3. Thermoelectric Effect
 
-The model uses coupled multiphysics behavior involving:
-
-- Heat Transfer
-- Electric Currents
-- Thermoelectric Effect
-
-The stationary study is used to evaluate the steady-state response of the system.
+The model is solved using a **Stationary Study**.
 
 ---
 
 ## Parametric Study
 
-A parametric sweep was performed by varying the H/L parameter over a wide range.
+A parametric study is performed by varying the **H/L ratio** of the thermoelectric geometry.
 
-The calculated output power was evaluated using the electrical response of the thermoelectric system.
+The main quantities investigated are:
 
-The current results show that the output power increases initially, reaches a maximum at an intermediate H/L value, and subsequently decreases as H/L increases further.
+- Output power
+- Effective temperature
+- Temperature distribution
+- Temperature difference across the module
+- Electrical response
 
-This behavior indicates the presence of an optimum geometric condition for maximum power output.
+The purpose of the parametric study is to understand how the thermoelectric geometry influences the overall performance of the module.
 
 ---
 
 ## Current Results
 
-### 1. Power vs H/L
+### Power vs H/L
 
-The power curve shows a maximum output power of approximately 0.018–0.019 W within the investigated H/L range.
+The calculated output power initially increases with H/L and reaches a maximum region before decreasing at larger H/L values.
 
 ![Power vs H/L](Results/Power_vs_HL.png)
 
 ---
 
-### 2. Logarithmic Power Analysis
+### Power – Logarithmic Plot
 
-A logarithmic representation of the power relationship with H/L was also generated to examine the behavior over the wide parameter range.
+A logarithmic representation of the power variation is also included to examine the trend over the investigated H/L range.
 
-![Logarithmic Power Plot](Results/Power_Log_Plot.png)
+![Power Log Plot](Results/Power_Log_Plot.png)
 
 ---
 
-### 3. Effective Temperature
+### Effective Temperature
 
-The effective temperature increases rapidly at lower H/L values and gradually approaches a nearly constant value at higher H/L.
+The effective temperature shows an increasing trend with the investigated H/L ratio.
 
 ![Effective Temperature](Results/Effective_Temperature.png)
 
 ---
 
-### 4. Temperature vs H/L
+### Temperature vs H/L
 
-The temperature response demonstrates significant variation with H/L. The higher-temperature region increases while the lower-temperature region decreases as H/L increases.
+The temperature response of different regions of the thermoelectric module is investigated as a function of H/L.
 
 ![Temperature vs H/L](Results/Temperature_vs_HL.png)
 
@@ -125,61 +116,60 @@ The temperature response demonstrates significant variation with H/L. The higher
 
 ## Preliminary Observations
 
-The current numerical results indicate:
+From the current simulation results:
 
-1. Output power is strongly dependent on H/L.
-2. An intermediate H/L region produces the maximum calculated power.
-3. Effective temperature increases with H/L and eventually approaches a plateau.
-4. The temperature response changes significantly across the investigated H/L range.
-5. Further analysis is required before determining the final optimum configuration.
+- Output power is strongly dependent on the H/L ratio.
+- Power increases initially with increasing H/L.
+- A maximum-power region is observed within the investigated range.
+- The effective temperature changes with H/L.
+- Different regions of the thermoelectric module exhibit different temperature trends.
+- Further mesh and convergence analysis is required before considering the results final.
 
----
-
-## Future Work
-
-The next stage of the project will focus on:
-
-- Extracting exact numerical values from COMSOL
-- Determining the optimum H/L ratio
-- Checking mesh independence
-- Studying temperature distribution
-- Studying electric potential distribution
-- Studying current density
-- Studying heat flux
-- Evaluating voltage, current and power
-- Comparing results with the reference study
-- Performing final validation
-- Preparing the final engineering conclusions
+> **Note:** The current results are preliminary because mesh independence, convergence, and detailed comparison with the reference study are still being evaluated.
 
 ---
 
-## Project Workflow
+## Model Geometry
+
+The 3D geometry of the thermoelectric module is shown below.
+
+![Model Geometry](Geometry/Model_Geometry.png)
+
+---
+
+## Mesh
+
+The model uses a finite-element mesh generated in COMSOL Multiphysics.
+
+![Mesh](Mesh/Mesh.png)
+
+Mesh refinement and convergence verification will be performed during the later stages of the study.
+
+---
+
+## Workflow
 
 ```text
-Geometry
-   ↓
-Material Properties
-   ↓
-Physics Setup
-   ↓
+Geometry Creation
+        ↓
+Material Assignment
+        ↓
+Heat Transfer Physics
+        ↓
+Electric Currents Physics
+        ↓
+Thermoelectric Coupling
+        ↓
 Boundary Conditions
-   ↓
-Mesh
-   ↓
+        ↓
+Mesh Generation
+        ↓
 Stationary Study
-   ↓
-Parametric Sweep
-   ↓
-H/L Variation
-   ↓
+        ↓
+H/L Parametric Study
+        ↓
 Temperature Analysis
-   ↓
-Electrical Analysis
-   ↓
-Power Calculation
-   ↓
-Optimization
-   ↓
-Validation
-   ↓
-Final Conclusions
+        ↓
+Power Analysis
+        ↓
+Optimization & Validation
