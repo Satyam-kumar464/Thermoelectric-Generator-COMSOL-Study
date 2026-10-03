@@ -173,3 +173,12 @@ Temperature Analysis
 Power Analysis
         ↓
 Optimization & Validation
+
+
+```
+## References
+
+1. ScienceDirect.  
+   Reference study on thermoelectric generator modelling and performance analysis.  
+   Available at:  
+   https://www.sciencedirect.com/science/article/pii/S0196890418305077
