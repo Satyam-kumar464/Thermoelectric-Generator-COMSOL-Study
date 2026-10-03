@@ -80,6 +80,15 @@ The purpose of the parametric study is to understand how the thermoelectric geom
 
 ---
 
+## COMSOL Model
+
+The complete COMSOL Multiphysics model used for the simulations is available
+through the link below.
+
+> **Note:** The `.mph` file is hosted externally due to its large file size.
+
+**[ Download COMSOL Model (.mph)]([YOUR_GOOGLE_DRIVE_LINK](https://drive.google.com/file/d/1AOH_IT3tkqrxp70WpSyCTIMPppyzL74B/view?usp=drivesdk))**
+
 ## Current Results
 
 ### Power vs H/L
