@@ -2,7 +2,7 @@
 
 A numerical study of a thermoelectric generator/module using COMSOL Multiphysics, focusing on thermal and electrical behavior and the effect of the H/L geometric ratio on thermoelectric performance.
 
-> **Project Status:** 🚧 In Progress
+> **Project Status:**  In Progress
 
 ---
 
@@ -86,7 +86,7 @@ The purpose of the parametric study is to understand how the thermoelectric geom
 
 The calculated output power initially increases with H/L and reaches a maximum region before decreasing at larger H/L values.
 
-![Power vs H/L](Results/Power_vs_HL.png)
+![Power vs H/L](Results/Power_vs_HL..png)
 
 ---
 
@@ -94,7 +94,7 @@ The calculated output power initially increases with H/L and reaches a maximum r
 
 A logarithmic representation of the power variation is also included to examine the trend over the investigated H/L range.
 
-![Power Log Plot](Results/Power_vs_HL..png)
+![Power Log Plot](Results/Power_Log_Plot.png)
 
 ---
 
