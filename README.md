@@ -94,7 +94,7 @@ The calculated output power initially increases with H/L and reaches a maximum r
 
 A logarithmic representation of the power variation is also included to examine the trend over the investigated H/L range.
 
-![Power Log Plot](Results/Power_Log_Plot.png)
+![Power Log Plot](Results/Power_vs_HL..png)
 
 ---
 
